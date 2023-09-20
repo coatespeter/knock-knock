@@ -1,6 +1,8 @@
 
 let modal = document.querySelector(".modal");
 let modalButton = document.getElementById("modal-btn");
+let closeButton = document.querySelector(".close-button");
+let resetButton = document.getElementById("reset-button");
 
 //modal box settings
 
