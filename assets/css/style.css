@@ -45,6 +45,14 @@ button {
     border-radius: 6px;
     box-shadow: 5px 5px;
 }
+
 .game-settings button {
-    margin-right: 15px;/* Adjust the value to increase or decrease the spacing */
+    margin-right: 15px;
   }
+  
+.game-image-area img {
+    width: auto;
+    max-width: 100%;
+    height: auto;
+    padding-top: 20px;
+}
