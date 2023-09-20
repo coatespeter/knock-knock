@@ -36,7 +36,12 @@ window.addEventListener("click", (e) => {
       modal.style.display = "none";
   }
 });
-
+/**
+ * Reset button
+ */
+resetButton.addEventListener("click", () => {
+  location.reload();
+});
 // Global variables to keep track of scores
 
 // Function to choose a random door number
