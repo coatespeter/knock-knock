@@ -1,11 +1,11 @@
 
 let modal = document.querySelector(".modal");
 let modalButton = document.getElementById("modal-btn");
-let closeButton = document.querySelector(".close-button");
+let closeButton = document.querySelector(".close-btn");
 let resetButton = document.getElementById("reset-btn");
-const musicButton = document.getElementById('music-btn');
+const audio = document.getElementById("music-btn");
 
-//music controls
+//theme music control
 
 musicButton.addEventListener("click", () => {
   if (audio.paused) {
