@@ -50,8 +50,8 @@ button {
     border: 3px solid;
 }
 
-game-settings {
-    padding-bottom: 30px;
+.game-settings {
+    padding-bottom: 20px;
 }
 
 .game-settings button {
