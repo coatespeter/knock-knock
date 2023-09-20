@@ -1,0 +1,3 @@
+[submodule "knock-knock"]
+    path = knock-knock
+    url = https://github.com/example/knock-knock.git
