@@ -42,36 +42,3 @@ window.addEventListener("click", (e) => {
 resetButton.addEventListener("click", () => {
   location.reload();
 });
-// Global variables to keep track of scores
-
-// Function to choose a random door number
-function chooseRandomDoor() {
-    return Math.floor(Math.random() * 3) + 1;
-}
-
-// Function to start the game
-function startGame(playerChoice) {
-    // Get the random door chosen by the computer
-    const cpuChoice = chooseRandomDoor();
-
-    // Determine the winner and update scores
-    if (playerChoice === cpuChoice) {
-        cpuScore++;
-        alert(`Computer chose Door ${cpuChoice}. CPU wins!`);
-    } else {
-        playerScore++;
-        alert(`Computer chose Door ${cpuChoice}. You win!`);
-    }
-
-    // Update scores on the page
-    document.getElementById('playerScore').textContent = `Player Score: ${playerScore}`;
-    document.getElementById('cpuScore').textContent = `CPU Score: ${cpuScore}`;
-}
-
-// Function to handle button click
-function handleButtonClick() {
-    // Assuming the modal has buttons with IDs "door1", "door2", and "door3"
-    document.getElementById("door1").addEventListener('click', () => startGame(1));
-    document.getElementById("door2").addEventListener('click', () => startGame(2));
-    document.getElementById('door3').addEventListener('click', () => startGame(3));
-}
