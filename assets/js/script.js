@@ -1,9 +1,10 @@
 
 let modal = document.querySelector(".modal");
-let modalButton = document.getElementById("modal-btn");
-let closeButton = document.querySelector(".close-btn");
-let resetButton = document.getElementById("reset-btn");
-const audio = document.getElementById("music-btn");
+let modalButton = document.getElementById("modal-button");
+let closeButton = document.querySelector(".close-button");
+let resetButton = document.getElementById("reset-button");
+const audio = document.getElementById("audio");
+const musicButton = document.getElementById("music-button");
 
 //theme music control
 
