@@ -1,22 +1,20 @@
 
+let modal = document.querySelector(".modal");
+let modalButton = document.getElementById("modal-btn");
 
-const chosenDoor; // NOW PAPER
+//modal box settings
 
- chooseDoor();
- runThroughDoor(chosenDoor)
+modalButton.addEventListener("click", () => {
+  modal.style.display = "block";
+});
 
-function chooseDoor() {
-  const doors = ['paper', 'wood', 'wood'];
-  const chosenDoorIndex = Math.floor(Math.random() * doors.length);
-  chosenDoor = doors[chosenDoorIndex];
-}
+closeButton.addEventListener("click", () => {
+  modal.style.display = "none";
+});
 
-function runThroughDoor(chosenDoor){
-  if (chosenDoor === 'paper') {
-    console.log("You made it to the next set of doors!");
-    // Here you can proceed to the next level or perform some other action
-  } else {
-    console.log("You hit the hard door and lose.");
-    // Here you can handle what happens when the player loses
+window.addEventListener("click", (e) => {
+  if (e.target == modal) {
+      modal.style.display = "none";
   }
-}
+});
+

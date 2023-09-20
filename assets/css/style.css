@@ -1,3 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Aclonica&display=swap');
+
 body {
-    background-color:antiquewhite
+    font-family: Aclonica, sans-serif;
+    background-color:antiquewhite;
+    text-align: center;
 }
+
+header {
+    font-size: 1.5em;
+}
+
+.modal {
+    display: none;
+    position: fixed;
+    padding: 20px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(239, 11, 11, 0.8);
+    overflow-y: auto;
+}
+
+.modal-content {
+    position: relative;
+    background-color:antiquewhite;
+    border: 4px solid #000000;
+    height: auto;
+    padding: 30px;
+    margin: auto;
+    width: 60%;
+    font-size: 1.5rem;
+}
+
