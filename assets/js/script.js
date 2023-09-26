@@ -1,5 +1,5 @@
 
-let userRunner = 0;
+let player = 0;
 let cpu = 1;
 let cpuDirection;
 let playerScore = 0;
@@ -8,6 +8,8 @@ let modal = document.querySelector(".modal");
 let modalButton = document.getElementById("modal-button");
 let closeButton = document.querySelector(".close-button");
 let resetButton = document.getElementById("reset-button");
+const options = ["left", "middle", "right"];
+const cpuChoice = options[Math.floor(Math.random() * 3)];
 const audio = document.getElementById("audio");
 const musicButton = document.getElementById("music-button");
 const controlButtons = document.querySelectorAll(".control-button");
@@ -49,14 +51,15 @@ resetButton.addEventListener("click", () => {
 });
 
 controlButtons.forEach(button => button.addEventListener("click", () => {
-  userDirection = button.textContent;
+  playerDirection = button.textContent;
   generateCpuDirection();
-  gameState.textContent = checkOutcome();
+  const outcome = checkOutcome(playerDirection, cpuDirection);
+  gameState.textContent = outcome;
   checkWinner();
 }));
 
 function generateCpuDirection() {
-  const cpuChoice = Math.floor(Math.random() * 3 + 1);
+  const cpuChoice = Math.floor(Math.random() * 3)
 
   switch (cpuChoice) {
       case 1:
@@ -71,3 +74,10 @@ function generateCpuDirection() {
   }
 }
 
+function checkOutcome(playerChoice, cpuChoice) {
+  if (playerChoice === cpuChoice) {
+      return "Player wins!";
+  } else {
+      return "Computer wins!";
+  }
+}
