@@ -42,3 +42,10 @@ window.addEventListener("click", (e) => {
 resetButton.addEventListener("click", () => {
   location.reload();
 });
+
+controlButtons.forEach(button => button.addEventListener("click", () => {
+  userDirection = button.textContent;
+  generateCpuDirection();
+  gameState.textContent = checkOutcome();
+  checkWinner();
+}));
