@@ -7,6 +7,7 @@ let closeButton = document.querySelector(".close-button");
 let resetButton = document.getElementById("reset-button");
 const audio = document.getElementById("audio");
 const musicButton = document.getElementById("music-button");
+const controlButtons = document.querySelectorAll(".control-button");
 
 //theme music control
 
