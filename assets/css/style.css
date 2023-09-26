@@ -59,9 +59,10 @@ button {
     margin-right: 15px;
 }
 
-.game-controls button {
-    margin-right: 30px;
+.controls button {
+    margin-right: 15px;
 }
+
 .main-game-image img {
     width: auto;
     max-width: 70%;
