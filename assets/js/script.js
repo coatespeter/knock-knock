@@ -1,7 +1,8 @@
 
+let playerDirection;
+let cpuDirection;
 let player = 0;
 let cpu = 1;
-let cpuDirection;
 let playerScore = 0;
 let cpuScore = 0;
 let modal = document.querySelector(".modal");
@@ -62,22 +63,22 @@ function generateCpuDirection() {
   const cpuChoice = Math.floor(Math.random() * 3)
 
   switch (cpuChoice) {
-      case 1:
-          cpuDirection = 'left';
-          break;
-      case 2:
-          cpuDirection = 'middle';
-          break;
-      case 3:
-          cpuDirection = 'right';
-          break;
+    case 0: 
+      cpuDirection = 'left';
+      break;
+    case 1: 
+      cpuDirection = 'middle';
+      break;
+    case 2: 
+      cpuDirection = 'right';
+      break;
   }
 }
 
 function checkOutcome(playerChoice, cpuChoice) {
   if (playerChoice === cpuChoice) {
-      return "Player wins!";
+      return "It's a tie!";
   } else {
-      return "Computer wins!";
+      return "Player wins!";
   }
-}
+}  
