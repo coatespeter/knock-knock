@@ -1,4 +1,6 @@
-
+let userRunner = 0;
+let cpu = 1;
+let cpuDirection;
 let playerScore = 0;
 let cpuScore = 0;
 let modal = document.querySelector(".modal");
@@ -8,6 +10,7 @@ let resetButton = document.getElementById("reset-button");
 const audio = document.getElementById("audio");
 const musicButton = document.getElementById("music-button");
 const controlButtons = document.querySelectorAll(".control-button");
+const gameState = document.querySelector("#gameState");
 
 //theme music control
 
@@ -50,3 +53,20 @@ controlButtons.forEach(button => button.addEventListener("click", () => {
   gameState.textContent = checkOutcome();
   checkWinner();
 }));
+
+function generateCpuDirection() {
+  const cpuChoice = Math.floor(Math.random() * 3 + 1);
+
+  switch (cpuChoice) {
+      case 1:
+          cpuDirection = 'left';
+          break;
+      case 2:
+          cpuDirection = 'middle';
+          break;
+      case 3:
+          cpuDirection = 'right';
+          break;
+  }
+}
+
