@@ -1,6 +1,5 @@
-
 let playerDirection;
-let cpuDirection;
+let paperDoorPosition;
 let player = 0;
 let cpu = 1;
 let playerScore = 0;
@@ -15,17 +14,18 @@ const audio = document.getElementById("audio");
 const musicButton = document.getElementById("music-button");
 const controlButtons = document.querySelectorAll(".control-button");
 const gameState = document.querySelector("#gameState");
+let image = document.getElementById("main-game-image");
 
 //theme music control
 
 musicButton.addEventListener("click", () => {
   if (audio.paused) {
-      audio.volume = 0.2;
-      audio.play();
-      musicButton.innerHTML = "Stop Music";
+    audio.volume = 0.2;
+    audio.play();
+    musicButton.innerHTML = "Stop Music";
   } else {
-      audio.pause();
-      musicButton.innerHTML = "Play Music";
+    audio.pause();
+    musicButton.innerHTML = "Play Music";
   }
 });
 
@@ -41,9 +41,10 @@ closeButton.addEventListener("click", () => {
 
 window.addEventListener("click", (e) => {
   if (e.target == modal) {
-      modal.style.display = "none";
+    modal.style.display = "none";
   }
 });
+
 /**
  * Reset button
  */
@@ -53,32 +54,64 @@ resetButton.addEventListener("click", () => {
 
 controlButtons.forEach(button => button.addEventListener("click", () => {
   playerDirection = button.textContent;
-  generateCpuDirection();
-  const outcome = checkOutcome(playerDirection, cpuDirection);
-  gameState.textContent = outcome;
-  checkWinner();
+  generatePaperDoorPosition();
+  checkOutcome(playerDirection, paperDoorPosition);
+
+
+  // add a timer before resetting the image to main game image
+  // checkWinner();
 }));
 
-function generateCpuDirection() {
+function generatePaperDoorPosition() {
   const cpuChoice = Math.floor(Math.random() * 3)
 
   switch (cpuChoice) {
-    case 0: 
-      cpuDirection = 'left';
+    case 0:
+      paperDoorPosition = 'left';
       break;
-    case 1: 
-      cpuDirection = 'middle';
+    case 1:
+      paperDoorPosition = 'middle';
       break;
-    case 2: 
-      cpuDirection = 'right';
+    case 2:
+      paperDoorPosition = 'right';
       break;
   }
 }
 
-function checkOutcome(playerChoice, cpuChoice) {
-  if (playerChoice === cpuChoice) {
-      return "It's a tie!";
+function checkOutcome(playerChoice, paperDoorPosition) {
+
+  if (playerChoice.toLowerCase() === paperDoorPosition.toLowerCase()) {
+    setResultImage(playerChoice, "rip");
+    gameState.textContent = `Player rips through paper`;
+    // sleep(2000);
+    // setMainImage();
+
   } else {
-      return "Player wins!";
+    setResultImage(playerChoice, "bang");
+    gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
+    // sleep(2000);
+    // setMainImage();
   }
-}  
+}
+
+function setResultImage(playerChoice, result) {
+  image.src = `../assets/images/player-${playerChoice}-${result}.webp`
+}
+
+function setMainImage() {
+  image.src = `../assets/images/main-image.webp`
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
