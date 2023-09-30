@@ -135,8 +135,12 @@ function declareWinner() {
   // Hide the main game image
   image.style.display = "none";
   
-  // Wait for 6 seconds and then reset the game
-  setTimeout(restartGame, 6000);
+  setTimeout(() => {
+    setMainImage(); // Set the main image
+    gameState.textContent = "Pick a door and RUN!!"; // Reset game state text
+    document.getElementById("winning-image").style.display = "none"; // Hide winning image
+    image.style.display = "block"; // Show main game image
+  }, 4000);
 }
 
 
