@@ -84,15 +84,20 @@ function checkOutcome(playerChoice, paperDoorPosition) {
   if (playerChoice.toLowerCase() === paperDoorPosition.toLowerCase()) {
     setResultImage(playerChoice, "rip");
     gameState.textContent = `Player rips through paper`;
-    setTimeout(setMainImage, 2000);
+    setTimeout(setMainImage, 5000);
     userRips++; // Increment the userRips variable
     userScore.innerHTML = userRips; // Update the score display
+
+    if (userRips === 3) {
+      declareWinner();
+      }
+
   } else {
     setResultImage(playerChoice, "bang");
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
     setTimeout(() => {
       restartGame(); // Restart the game after 2 seconds
-    }, 2000);
+    }, 5000);
   }
 }
 
@@ -119,6 +124,10 @@ function restartGame() {
   gameState.textContent = "Pick a door and RUN!!";
 }
 
+function declareWinner() {
+  // Display a message declaring the user as the winner
+  gameState.textContent = "Congratulations! You have Knock-Knock'D your way to the next round and are now, one step closer to storming Takeshi's Castle!";
+}
 
 
 

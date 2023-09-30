@@ -66,6 +66,6 @@ button {
 .main-game-image img {
     width: auto;
     max-width: 70%;
-    height: auto;
+    height: 600px;
     border: 8px solid;
 }
