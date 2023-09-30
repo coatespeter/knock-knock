@@ -90,7 +90,9 @@ function checkOutcome(playerChoice, paperDoorPosition) {
   } else {
     setResultImage(playerChoice, "bang");
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
-    setTimeout(setMainImage, 2000);
+    setTimeout(() => {
+      restartGame(); // Restart the game after 2 seconds
+    }, 2000);
   }
 }
 
@@ -105,6 +107,16 @@ function setMainImage() {
 
 function updateScore() {
   userScore.textContent = playerScore; // Update the score display
+}
+
+function restartGame() {
+  // Reset necessary variables or game state here
+  userRips = 0;
+  userScore.innerHTML = userRips;
+  // Call any other functions needed to reset the game
+  // For example, you might want to reset the image and game state text
+  setMainImage();
+  gameState.textContent = "Pick a door and RUN!!";
 }
 
 
