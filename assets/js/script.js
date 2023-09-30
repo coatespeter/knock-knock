@@ -66,6 +66,7 @@ controlButtons.forEach(button => button.addEventListener("click", () => {
 
 function generatePaperDoorPosition() {
   const cpuChoice = Math.floor(Math.random() * 3)
+  
 
   switch (cpuChoice) {
     case 0:
@@ -97,7 +98,7 @@ function checkOutcome(playerChoice, paperDoorPosition) {
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
     setTimeout(() => {
       restartGame(); // Restart the game after 2 seconds
-    }, 3000);
+    }, 2000);
   }
 }
 
@@ -125,9 +126,9 @@ function restartGame() {
 }
 
 function declareWinner() {
-  // Display a message declaring the user as the winner
+  // display a message declaring the user as the winner
   gameState.textContent = "Congratulations! You have Knock-Knock'D your way to the next round and are now, one step closer to storming Takeshi's Castle!";
-  
+  document.getElementById("winning-image").src = "assets/images/winning-image.webp";
   // Show the winning image
   document.getElementById("winning-image").style.display = "block";
   
