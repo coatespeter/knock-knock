@@ -69,6 +69,8 @@ button {
     max-width: 70%;
     height: 600px;
     border: 8px solid;
+    display: block; /* Ensures the image is treated as a block element */
+    margin: 0 auto; /* Auto margin horizontally centers the image */
 }
 
 
