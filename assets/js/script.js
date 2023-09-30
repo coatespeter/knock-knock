@@ -127,7 +127,17 @@ function restartGame() {
 function declareWinner() {
   // Display a message declaring the user as the winner
   gameState.textContent = "Congratulations! You have Knock-Knock'D your way to the next round and are now, one step closer to storming Takeshi's Castle!";
+  
+  // Show the winning image
+  document.getElementById("winning-image").style.display = "block";
+  
+  // Hide the main game image
+  image.style.display = "none";
+  
+  // Wait for 6 seconds and then reset the game
+  setTimeout(restartGame, 6000);
 }
+
 
 
 
