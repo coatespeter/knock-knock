@@ -3,7 +3,6 @@ let paperDoorPosition;
 let player = 0;
 let cpu = 1;
 let playerScore = 0;
-let cpuScore = 0;
 let modal = document.querySelector(".modal");
 let modalButton = document.getElementById("modal-button");
 let closeButton = document.querySelector(".close-button");
@@ -16,6 +15,8 @@ const controlButtons = document.querySelectorAll(".control-button");
 const gameState = document.querySelector("#gameState");
 const userScore = document.getElementById('user-score');
 let image = document.getElementById("main-game-image");
+let userRips = 0;
+
 
 //theme music control
 
@@ -80,22 +81,19 @@ function generatePaperDoorPosition() {
 }
 
 function checkOutcome(playerChoice, paperDoorPosition) {
-
   if (playerChoice.toLowerCase() === paperDoorPosition.toLowerCase()) {
     setResultImage(playerChoice, "rip");
     gameState.textContent = `Player rips through paper`;
     setTimeout(setMainImage, 2000);
-    userScore++;
-    updateScore();
-    // setMainImage();
-
+    userRips++; // Increment the userRips variable
+    userScore.innerHTML = userRips; // Update the score display
   } else {
     setResultImage(playerChoice, "bang");
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
     setTimeout(setMainImage, 2000);
-    // setMainImage();
   }
 }
+
 
 function setResultImage(playerChoice, result) {
   image.src = `../assets/images/player-${playerChoice}-${result}.webp`
@@ -106,11 +104,8 @@ function setMainImage() {
 }
 
 function updateScore() {
-  // Assuming you have an element with the id 'scoreDisplay'
-  const userScore = document.getElementById('userScore');
-  scoreDisplay.textContent = `Score: ${userScore}`;
+  userScore.textContent = playerScore; // Update the score display
 }
-
 
 
 
