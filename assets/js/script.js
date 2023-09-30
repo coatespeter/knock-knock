@@ -14,6 +14,7 @@ const audio = document.getElementById("audio");
 const musicButton = document.getElementById("music-button");
 const controlButtons = document.querySelectorAll(".control-button");
 const gameState = document.querySelector("#gameState");
+const userScore = document.getElementById('user-score');
 let image = document.getElementById("main-game-image");
 
 //theme music control
@@ -83,13 +84,15 @@ function checkOutcome(playerChoice, paperDoorPosition) {
   if (playerChoice.toLowerCase() === paperDoorPosition.toLowerCase()) {
     setResultImage(playerChoice, "rip");
     gameState.textContent = `Player rips through paper`;
-    // sleep(2000);
+    setTimeout(setMainImage, 2000);
+    userScore++;
+    updateScore();
     // setMainImage();
 
   } else {
     setResultImage(playerChoice, "bang");
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
-    // sleep(2000);
+    setTimeout(setMainImage, 2000);
     // setMainImage();
   }
 }
@@ -100,6 +103,12 @@ function setResultImage(playerChoice, result) {
 
 function setMainImage() {
   image.src = `../assets/images/main-image.webp`
+}
+
+function updateScore() {
+  // Assuming you have an element with the id 'scoreDisplay'
+  const userScore = document.getElementById('userScore');
+  scoreDisplay.textContent = `Score: ${userScore}`;
 }
 
 
