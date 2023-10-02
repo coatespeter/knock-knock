@@ -95,6 +95,9 @@ button {
     }
     .game-settings button {
         margin-right: 5px;
+        font-size: 0.8rem; /* Adjust the font size for smaller screens */
+        padding: 0.5rem 1rem; /* Adjust the padding for smaller screens */
+        margin-right: 5px;
         
     }
     
