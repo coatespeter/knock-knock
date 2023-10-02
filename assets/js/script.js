@@ -12,7 +12,7 @@ const gameState = document.querySelector("#gameState");
 const userScore = document.getElementById('user-score');
 let image = document.getElementById("main-game-image");
 let userRips = 0;
-
+let outcomeTimeout; // Variable to store outcome timeout ID
 
 //theme music control
 
@@ -82,21 +82,23 @@ function checkOutcome(playerChoice, paperDoorPosition) {
   if (playChoiceLower === paperDoorPosition.toLowerCase()) {
     setResultImage(playChoiceLower, "rip");
     gameState.textContent = `Player rips through paper`;
-    setTimeout(setMainImage, 3000);
     userRips++; // Increment the userRips variable
     userScore.innerHTML = userRips; // Update the score display
 
     if (userRips === 3) {
       declareWinner();
-      }
+    }
 
   } else {
     setResultImage(playChoiceLower, "bang");
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
-    setTimeout(() => {
+    outcomeTimeout = setTimeout(() => {
       restartGame(); // Restart the game after 2 seconds
     }, 2000);
   }
+
+  // Clear the timeout regardless of outcome
+  clearTimeout(outcomeTimeout);
 }
 
 function setResultImage(playerChoice, result) {
@@ -132,10 +134,10 @@ function declareWinner() {
     gameState.textContent = "Pick a door and RUN!!"; // Reset game state text
     document.getElementById("winning-image").style.display = "none"; // Hide winning image
     image.style.display = "block"; // Show main game image
-  }, 4000);
+  }, 10000);
 }
 
-//fi
+
 
 
 
