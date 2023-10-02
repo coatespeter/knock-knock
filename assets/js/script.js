@@ -137,10 +137,20 @@ function declareWinner() {
     gameState.textContent = "Pick a door and RUN!!"; // Reset game state text
     document.getElementById("winning-image").style.display = "none"; // Hide winning image
     image.style.display = "block"; // Show main game image
+    // Reset the score and update the display
     userRips = 0;
-  }, 10000);
-}
+    userScore.innerHTML = userRips;
 
+    // Hide the control buttons
+    controlButtons.forEach(button => button.style.display = "none");
+
+    // Show the play again button
+    playAgainButton.style.display = "block";
+  }, 10000);
+
+  // Show the play again button
+  playAgainButton.style.display = "block";
+}
 
 
 
