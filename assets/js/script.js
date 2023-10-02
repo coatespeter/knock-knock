@@ -148,6 +148,10 @@ function declareWinner() {
   }, 1000); // Changed timeout value to 5000 milliseconds (5 seconds)
 }
 
+playAgainButton.addEventListener("click", () => {
+  location.reload(); // Reload the page to reset the game
+});
+
 
 
 
