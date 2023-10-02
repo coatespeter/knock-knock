@@ -1,12 +1,11 @@
 /* jshint esversion: 11 */
 let playerDirection;
 let paperDoorPosition;
-let playerScore = 0;
+
 let modal = document.querySelector(".modal");
 let modalButton = document.getElementById("modal-button");
 let closeButton = document.querySelector(".close-button");
 let resetButton = document.getElementById("reset-button");
-const options = ["left", "middle", "right"];
 
 const audio = document.getElementById("audio");
 const musicButton = document.getElementById("music-button");
