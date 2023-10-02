@@ -98,7 +98,6 @@ function checkOutcome(playerChoice, paperDoorPosition) {
   }
 }
 
-
 function setResultImage(playerChoice, result) {
   image.src = `../assets/images/player-${playerChoice}-${result}.webp`;
 }
@@ -106,7 +105,6 @@ function setResultImage(playerChoice, result) {
 function setMainImage() {
   image.src = `../assets/images/main-image.webp`;
 }
-
 
 function restartGame() {
   // Reset necessary variables or game state here
