@@ -78,8 +78,8 @@ function generatePaperDoorPosition() {
 }
 
 function checkOutcome(playerChoice, paperDoorPosition) {
-  let playChoiceLower = playerChoice.toLowerCase
-  if (playChoiceLower.toLowerCase() === paperDoorPosition.toLowerCase()) {
+  let playChoiceLower = playerChoice.toLowerCase()
+  if (playChoiceLower === paperDoorPosition.toLowerCase()) {
     setResultImage(playChoiceLower, "rip");
     gameState.textContent = `Player rips through paper`;
     setTimeout(setMainImage, 3000);
