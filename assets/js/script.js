@@ -7,7 +7,7 @@ let modalButton = document.getElementById("modal-button");
 let closeButton = document.querySelector(".close-button");
 let resetButton = document.getElementById("reset-button");
 const options = ["left", "middle", "right"];
-const cpuChoice = options[Math.floor(Math.random() * 3)];
+
 const audio = document.getElementById("audio");
 const musicButton = document.getElementById("music-button");
 const controlButtons = document.querySelectorAll(".control-button");
@@ -110,9 +110,6 @@ function setMainImage() {
   image.src = `../assets/images/main-image.webp`;
 }
 
-function updateScore() {
-  userScore.textContent = playerScore; // Update the score display
-}
 
 function restartGame() {
   // Reset necessary variables or game state here
