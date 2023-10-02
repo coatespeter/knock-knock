@@ -1,7 +1,6 @@
+/* jshint esversion: 11 */
 let playerDirection;
 let paperDoorPosition;
-let player = 0;
-let cpu = 1;
 let playerScore = 0;
 let modal = document.querySelector(".modal");
 let modalButton = document.getElementById("modal-button");
