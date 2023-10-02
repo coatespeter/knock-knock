@@ -92,7 +92,7 @@ function checkOutcome(playerChoice, paperDoorPosition) {
 
   } else {
     setResultImage(playChoiceLower, "bang");
-    gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
+    gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}, better guess again!`;
     
     // Reset the score to 0
     userRips = 0;
