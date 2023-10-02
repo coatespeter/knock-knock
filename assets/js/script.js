@@ -78,8 +78,9 @@ function generatePaperDoorPosition() {
 }
 
 function checkOutcome(playerChoice, paperDoorPosition) {
-  if (playerChoice.toLowerCase() === paperDoorPosition.toLowerCase()) {
-    setResultImage(playerChoice, "rip");
+  let playChoiceLower = playerChoice.toLowerCase
+  if (playChoiceLower.toLowerCase() === paperDoorPosition.toLowerCase()) {
+    setResultImage(playChoiceLower, "rip");
     gameState.textContent = `Player rips through paper`;
     setTimeout(setMainImage, 3000);
     userRips++; // Increment the userRips variable
@@ -90,7 +91,7 @@ function checkOutcome(playerChoice, paperDoorPosition) {
       }
 
   } else {
-    setResultImage(playerChoice, "bang");
+    setResultImage(playChoiceLower, "bang");
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
     setTimeout(() => {
       restartGame(); // Restart the game after 2 seconds
