@@ -100,11 +100,11 @@ function checkOutcome(playerChoice, paperDoorPosition) {
 }
 
 function setResultImage(playerChoice, result) {
-  image.src = `../images/player-${playerChoice}-${result}.webp`;
+  image.src = `assets/images/player-${playerChoice}-${result}.webp`;
 }
 
 function setMainImage() {
-  image.src = `../images/main-image.webp`;
+  image.src = `assets/images/main-image.webp`;
 }
 
 function restartGame() {
