@@ -93,14 +93,29 @@ function checkOutcome(playerChoice, paperDoorPosition) {
   } else {
     setResultImage(playChoiceLower, "bang");
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
+    
+    // Reset the score to 0
+    userRips = 0;
+    userScore.innerHTML = userRips;
+    
     outcomeTimeout = setTimeout(() => {
-      restartGame(); // Restart the game after 2 seconds
-    }, 2000);
+      setMainImage(); // Reset the image to main game image
+      gameState.textContent = "Pick a door and RUN!!"; // Reset game state text
+      document.getElementById("winning-image").style.display = "none"; // Hide winning image
+      image.style.display = "block"; // Show main game image
+
+      // Hide the control buttons
+      controlButtons.forEach(button => button.style.display = "none");
+
+      // Show the play again button
+      playAgainButton.style.display = "block";
+    }, 1000); // Delayed reset after player goes "bang"
   }
 
   // Clear the timeout regardless of outcome
   clearTimeout(outcomeTimeout);
 }
+
 
 function setResultImage(playerChoice, result) {
   image.src = `assets/images/player-${playerChoice}-${result}.webp`;
@@ -116,9 +131,10 @@ function restartGame() {
   userScore.innerHTML = userRips;
   // Call any other functions needed to reset the game
   // For example, you might want to reset the image and game state text
-  setMainImage();
+  setMainImage(); // Fixed function name here
   gameState.textContent = "Pick a door and RUN!!";
 }
+
 
 function declareWinner() {
   // display a message declaring the user as the winner
