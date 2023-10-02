@@ -13,6 +13,7 @@ const userScore = document.getElementById('user-score');
 let image = document.getElementById("main-game-image");
 let userRips = 0;
 let outcomeTimeout; // Variable to store outcome timeout ID
+const playAgainButton = document.getElementById("play-again-button");
 
 //theme music control
 
@@ -92,8 +93,10 @@ function checkOutcome(playerChoice, paperDoorPosition) {
   } else {
     setResultImage(playChoiceLower, "bang");
     gameState.textContent = `Player bangs into wood, the paper door was ${paperDoorPosition}`;
-    outcomeTimeout = setTimeout(() => {
-      restartGame(); // Restart the game after 2 seconds
+
+    // Delayed reset after player goes "bang"
+    setTimeout(() => {
+      restartGame();
     }, 2000);
   }
 
@@ -134,6 +137,7 @@ function declareWinner() {
     gameState.textContent = "Pick a door and RUN!!"; // Reset game state text
     document.getElementById("winning-image").style.display = "none"; // Hide winning image
     image.style.display = "block"; // Show main game image
+    userRips = 0;
   }, 10000);
 }
 
