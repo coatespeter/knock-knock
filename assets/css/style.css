@@ -73,7 +73,6 @@ button {
     margin: 0 auto; /* Auto margin horizontally centers the image */
 }
 
-
 @media only screen and (max-width: 767px) {
     .main-game-image img {
         max-width: 75%; /* Adjust the width for phones */
