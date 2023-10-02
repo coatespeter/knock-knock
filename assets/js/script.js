@@ -162,6 +162,7 @@ function declareWinner() {
     // Show the play again button
     playAgainButton.style.display = "block";
   }, 1000); // Changed timeout value to 5000 milliseconds (5 seconds)
+  gameState.style.display = "none";
 }
 
 playAgainButton.addEventListener("click", () => {
