@@ -200,14 +200,14 @@ The live link can be found here - [Knock Knock](https://coatespeter.github.io/kn
 
 ## LOCAL DEPLOYMENT
 
-To create a local copy of this project, you can clone it using Git. Open your IDE terminal and enter the following command: git clone https://coatespeter.github.io/knock-knock/
+To create a local copy of this project, you can clone it using Git. Open your IDE terminal and enter the following command: git clone <https://coatespeter.github.io/knock-knock/>
 
 ## CREDITS
 
 - I used chat GPT for some testing and paragraph creation. chat.openai.com
-- I used several youTube videos to help me with the JavaScript. I used this one to help me with the modal - https://www.youtube.com/watch?v=6ophW7Ask_0&t=1s
-- I used stack overflow on a daily basis for code-related problems throughout. https://stackoverflow.com/
-- I would like to credit another project which I took some style inspiration from for the layout https://adamgilroy22.github.io/stick-kick/
+- I used several youTube videos to help me with the JavaScript. I used this one to help me with the modal - [](https://www.youtube.com/watch?v=6ophW7Ask_0&t=1s)
+- I used stack overflow on a daily basis for code-related problems throughout.[](https://stackoverflow.com/)
+- I would like to credit another project which I took some style inspiration from for the layout [](https://adamgilroy22.github.io/stick-kick/)
 
 ## ACKNOWLEDGEMENTS
 
