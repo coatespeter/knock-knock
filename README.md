@@ -192,15 +192,26 @@ This bug was appearing during the testing phase. The directional buttons were ap
 
 The site was deployed to GitHub pages. The steps to deploy are as follows:
 
-- In the GitHub repository, navigate to the Settings tab.
-- From the source section drop-down menu, select the Main Branch, then click "Save".
+- In the GitHub repository.
+- Navigate to the Settings tab.
+- From the source section drop-down menu.
+- Select the Main Branch, then click "Save".
 - The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
 
 The live link can be found here - [Knock Knock](https://coatespeter.github.io/knock-knock/)
 
 ## LOCAL DEPLOYMENT
 
-To create a local copy of this project, you can clone it using Git. Open your IDE terminal and enter the following command: git clone <https://coatespeter.github.io/knock-knock/>
+How to Clone:
+Log into your account on GitHub
+Go to the repository of this project, Knock Knock.
+Click on the code button, and copy your preferred clone link.
+Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+Type 'git clone' into the terminal, paste the link you copied in step 3 and press enter.
+
+In this project, I used vscode as my IDE. I installed the live server extension and used it to run the project locally. To do this I navigate to the Go Live button in the bottom right corner of the IDE and click it. This opens the project in the browser.
+
+I also used the terminal in vscode to commit and push the project to GitHub.
 
 ## CREDITS
 
