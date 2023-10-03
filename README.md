@@ -60,12 +60,12 @@ The Logo appears at the top of the page in the center and introduces the name of
 Game settings buttons
 ![image of the game settings buttons](https://i.ibb.co/gPYHHCV/Screenshot-2023-10-03-at-09-18-13.png)
 The game settings buttons are located at the top of the page and allow the user to play music, read the instructions, reset the game, and play again.
-The play music button is in the off state when the page loads. When the user clicks the button, the music starts playing and the button changes to the on state. When the user clicks the button again, the music stops playing and the button returns to the off state. It will play the theme song from the TV show Takeshi's Castle on a loop.
-When the user clicks the instructions button, a modal appears with the game instructions. The user can close the modal by clicking the lets play button or by clicking anywhere outside the modal. The modal is responsive and will resize to fit the screen.
+**The play music button** is in the off state when the page loads. When the user clicks the button, the music starts playing and the button changes to the on state. When the user clicks the button again, the music stops playing and the button returns to the off state. It will play the theme song from the TV show Takeshi's Castle on a loop.
+When the user clicks the **instructions button**, a modal appears with the game instructions. The user can close the modal by clicking the lets play button or by clicking anywhere outside the modal. The modal is responsive and will resize to fit the screen.
 
 Modal
 ![image of the modal](https://i.ibb.co/c2W9FkH/Screenshot-2023-10-03-at-09-20-00.png)
-The reset button will reset the game to its initial state. It will reset the score to 0 and the game image to the initial image. It will also reset the directional buttons to their initial state.
+**The reset button** will reset the game to its initial state. It will reset the score to 0 and the game image to the initial image. 
 
 ## FUTURE IMPLEMENATIONS
 
