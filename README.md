@@ -203,11 +203,12 @@ The live link can be found here - [Knock Knock](https://coatespeter.github.io/kn
 ## LOCAL DEPLOYMENT
 
 How to Clone:
-Log into your account on GitHub
-Go to the repository of this project, Knock Knock.
-Click on the code button, and copy your preferred clone link.
-Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
-Type 'git clone' into the terminal, paste the link you copied in step 3 and press enter.
+
+- Log into your account on GitHub
+- Go to the repository of this project, Knock Knock.
+- Click on the code button, and copy your preferred clone link.
+- Open the terminal in your code editor and change the current working directory to the location you want to use for the cloned directory.
+- Type 'git clone' into the terminal, paste the link you copied in step 3 and press enter.
 
 In this project, I used vscode as my IDE. I installed the live server extension and used it to run the project locally. To do this I navigate to the Go Live button in the bottom right corner of the IDE and click it. This opens the project in the browser.
 
