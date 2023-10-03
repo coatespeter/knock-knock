@@ -6,6 +6,8 @@ Welcome to Knock Knock, an interactive game of chance where you'll face off agai
 
 It is designed to be very simple and nostalgic for players who were fans of th TV show "Takeshi's Castle".
 
+A link to the live site can be found here - [Knock Knock](https://coatespeter.github.io/knock-knock/)
+
 ## UX & DESIGN
 
 Given that this website is designed as a single-serving platform, it comprises only one page. The chosen design approach prioritizes simplicity and cleanliness to ensure that it complements, rather than competes with, the central game section of the page.
@@ -182,10 +184,31 @@ The website was tested on iPhone, Samsung and an older mode Oppo phone. There we
 
 ## BUGS
 
+![ipone bug blue buttons](https://i.ibb.co/gjBwnhy/IMG-5610.png)
+
+This bug was appearing during the testing phase. The directional buttons were appearing blue on iPhone. I was able to fix this by adding the CSS required to specifically set the exact parameters for the button colour, shadow and border.
+
 ## DEPLOYMENT
+
+The site was deployed to GitHub pages. The steps to deploy are as follows:
+
+- In the GitHub repository, navigate to the Settings tab.
+- From the source section drop-down menu, select the Main Branch, then click "Save".
+- The page will be automatically refreshed with a detailed ribbon display to indicate the successful deployment.
+
+The live link can be found here - [Knock Knock](https://coatespeter.github.io/knock-knock/)
 
 ## LOCAL DEPLOYMENT
 
+To create a local copy of this project, you can clone it using Git. Open your IDE terminal and enter the following command: git clone https://coatespeter.github.io/knock-knock/
+
 ## CREDITS
 
+- I used chat GPT for some testing and paragraph creation. chat.openai.com
+- I used several youTube videos to help me with the JavaScript. I used this one to help me with the modal - https://www.youtube.com/watch?v=6ophW7Ask_0&t=1s
+- I used stack overflow on a daily basis for code-related problems throughout. https://stackoverflow.com/
+- I would like to credit another project which I took some style inspiration from for the layout https://adamgilroy22.github.io/stick-kick/
+
 ## ACKNOWLEDGEMENTS
+
+I would like to Acknowledge my mentor, Luke Buchannan, for his guidance and support throughout this project. I would also like to thank my wife Philippa for her constant support and encouragement. I would also like to thank my fellow students on the slack channel for their help and support throughout the project.
