@@ -44,12 +44,12 @@ button {
     font-size: 1rem;
     font-weight: bold;
     text-align: center;
-    border: 1.5px solid #000000;
+    border: 1.5px solid black;
     padding: 1rem;
     background-color: antiquewhite;
     border-radius: 6px;
-    box-shadow: 5px 5px;
-    border: 3px solid;
+    box-shadow: 5px 5px 10px 0px black;
+    color: black;
 }
 
 .game-settings {
@@ -74,7 +74,7 @@ button {
     width: auto;
     max-width: 70%;
     height: 600px;
-    border: 8px solid;
+    border: 3px solid;
     display: block; /* Ensures the image is treated as a block element */
     margin: 0 auto; /* Auto margin horizontally centers the image */
 }
@@ -96,6 +96,7 @@ button {
         background-color: antiquewhite;
         border-radius: 6px;
         box-shadow: 5px 5px 10px 0px black;
+        color: black;
     }
     .game-settings button {
         margin-right: 5px;
