@@ -68,7 +68,7 @@ button {
     display: none; /* Initially hide the button */
     margin: auto; /* Center horizontally */
     margin-top: 10px; /* Add some top margin for spacing */
-  }
+}
 
 .main-game-image img {
     width: auto;

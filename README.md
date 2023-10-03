@@ -160,19 +160,25 @@ Future versions of the game could also feature a switch to allow the player to c
 
 | Test Description | Expected Result | Actual Result | Pass/Fail |
 | --- | --- | --- | --- |
-| Test 1: Verify that the Play Music button starts the theme song | You should hear the theme song play aloug   | Plays | PASS |
+| Test 1: Verify that the Play Music button starts the theme song | You should hear the theme song play aloud   | Plays | PASS |
 | Test 2: Verify that the user can make the modal appear clicking instructions. | Modal appears | Appears | PASS |
 | Test 3: Verify that the user can make the modal disappear | Disappears on pressing lets play or clicking outside the box | Dissppears | PASS |
-| Test 4: Verify that the user can press the reset button at any time and the game will return to the first game state| a reset of the game | Resets | PASS |
-| Test 5: Verify that the user can press the play again button at any time and the game will return to the first game state| a reset of the game | Resets | PASS |
-| Test 6: Verify that the user can press the directional buttons to interact with the game and have a corresponding image appear| all buttons function correctly | Direct player direction | PASS |
+| Test 4: Verify that the user can press the reset button at any time and the game will return to the first game state| A reset of the game | Resets | PASS |
+| Test 5: Verify that the user can press the play again button at any time and the game will return to the first game state| A reset of the game | Resets | PASS |
+| Test 6: Verify that the user can press the directional buttons to interact with the game and have a corresponding image appear| All buttons function correctly | Direct player direction | PASS |
 | Test 8: Verify that the user can win the game and have the game image appear letting them know| Winning picture should appear showing the General | Appears | PASS |
 
 ![lighthouse test & Wave & W3](https://i.ibb.co/gyYfFG2/wavelhousew3.jpg)
 
+The website was tested using [Lighthouse](https://developers.google.com/web/tools/lighthouse) in Chrome DevTools. The website was also tested using [Wave](https://wave.webaim.org/) and [W3C Markup Validation Service](https://validator.w3.org/).
+
 ![browser testing](https://i.ibb.co/Mk4Gmrx/browsertest.jpg)
 
+The website was tested on the following browsers: Chrome, Firefox, and Safari.
+
 ![phone testing](https://i.ibb.co/2dd1VCh/phonestest.jpg)
+
+The website was tested on iPhone, Samsung and an older mode Oppo phone. There were no problems on any of them. The website was also tested on an iPad with no problems.
 
 ## BUGS
 
