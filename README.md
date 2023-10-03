@@ -55,10 +55,12 @@ Favicon
 The favicon was created using [favicon.io](https://favicon.io/favicon-converter/). I drew an image of General Lee from the TV show Takeshi's Castle and uploaded it to the site. The site then generated a favicon.ico file which I downloaded and added to the project.
 
 Logo
+
 ![image of the knock knock logo](https://i.ibb.co/9HcQ7qq/Screenshot-2023-10-03-at-09-18-03.png)
 The Logo appears at the top of the page in the center and introduces the name of the game to the user.
 
 Game settings buttons
+
 ![image of the game settings buttons](https://i.ibb.co/gPYHHCV/Screenshot-2023-10-03-at-09-18-13.png)
 The game settings buttons are located at the top of the page and allow the user to play music, read the instructions, reset the game, and play again.
 
@@ -96,11 +98,15 @@ Directional buttons
 The directional buttons are located below the game image and allow the user to make their choices. The buttons are responsive and will resize to fit the screen.
 
 Winning image
+
 This will appear once the player has successfully ripped through three doors in a row.
+
 ![image of the winning image](https://i.ibb.co/17y4F0b/Screenshot-2023-10-03-at-09-19-34.png)
 
 Play again button
+
 This will appear once the player has successfully ripped through three doors in a row. It will reset the game to its initial state when clicked.
+
 ![image of the play again button](https://i.ibb.co/zSPxpKY/Screenshot-2023-10-03-at-09-19-43.png)
 
 ## FUTURE IMPLEMENATIONS
@@ -110,8 +116,38 @@ Future versions of the game could also feature a switch to allow the player to c
 
 ## TECHNOLOGIES USED
 
+- HTML5. The project uses HTML5 to create the structure of the website.
+
+- CSS3. The project uses CSS3 to style the website.
+
+- JavaScript. The project uses JavaScript to add interactivity to the website.
+
+- [Google Fonts](https://fonts.google.com/) The project uses google fonts to style the typography of the website.
+
+- [Favicon.io](https://favicon.io/favicon-converter/) The project uses favicon.io to create the favicon for the website.
+
+- [Git](https://git-scm.com/) The project uses Git for version control.
+
+- [GitHub] The project uses GitHub to host the project.
+
+- [GitHub Pages](https://pages.github.com/) The project uses GitHub Pages to deploy the project.
+
+- [Visual Studio Code](https://code.visualstudio.com/) The project uses Visual Studio Code as the IDE.
+
+- [Chrome DevTools](https://developers.google.com/web/tools/chrome-devtools) The project uses Chrome DevTools to test and debug the project.
+
+- [W3C Markup Validation Service](https://validator.w3.org/) The project uses W3C Markup Validation Service to validate HTML code.
+
+- [W3C CSS Validation Service](https://jigsaw.w3.org/css-validator/) The project uses W3C CSS Validation Service to validate CSS code.
+
+- [JSHint](https://jshint.com/) The project uses JSHint to validate JavaScript code.
+
+- [procreate](https://procreate.art/) The project uses procreate to create the favicon and all the game images.
+
 ## TESTING
 
 ## DEPLOYMENT
+
+## LOCAL DEPLOYMENT
 
 ## CREDITS
