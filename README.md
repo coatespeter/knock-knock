@@ -38,4 +38,22 @@ Given that this website is designed as a single-serving platform, it comprises o
 
 This was the initial wireframe for the project. The final design is very similar to this, with the exception of the "Play Again" button, which was added to the final design. I also decided to remove the vs computer button as it was not necessary for the game.
 
+## COLOUR SCHEME
 
+## TYPOGRAPHY
+
+I used Google Fonts to choose the typography for this project.
+
+![google font](https://i.ibb.co/9htV8r8/font.png)
+
+## FEATURES
+
+## FUTURE IMPLEMENATIONS
+
+## TECHNOLOGIES USED
+
+## TESTING
+
+## DEPLOYMENT
+
+## CREDITS
