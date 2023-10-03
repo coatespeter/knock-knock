@@ -72,7 +72,7 @@ Game Settings Buttons
 ![image of the game settings buttons](https://i.ibb.co/gPYHHCV/Screenshot-2023-10-03-at-09-18-13.png)
 The game settings buttons are located at the top of the page and allow the user to play music, read the instructions, reset the game, and play again.
 
-- The play music buttonis in the off state when the page loads. When the user clicks the button, the music starts playing and the button changes to the on state. When the user clicks the button again, the music stops playing and the button returns to the off state. It will play the theme song from the TV show Takeshi's Castle on a loop.
+- The play music button is in the off state when the page loads. When the user clicks the button, the music starts playing and the button changes to the on state. When the user clicks the button again, the music stops playing and the button returns to the off state. It will play the theme song from the TV show Takeshi's Castle on a loop.
 
 - When the user clicks the instructions button, a modal appears with the game instructions. The user can close the modal by clicking the lets play button or by clicking anywhere outside the modal. The modal is responsive and will resize to fit the screen.
 
@@ -176,7 +176,7 @@ The website was tested using [Lighthouse](https://developers.google.com/web/tool
 
 ![browser testing](https://i.ibb.co/Mk4Gmrx/browsertest.jpg)
 
-The website was tested on the following browsers: Chrome, Firefox, and Safari.
+The website was tested on the following browsers: Chrome, Opera, and Safari.
 
 ![phone testing](https://i.ibb.co/2dd1VCh/phonestest.jpg)
 
@@ -205,10 +205,10 @@ To create a local copy of this project, you can clone it using Git. Open your ID
 ## CREDITS
 
 - I used chat GPT for some testing and paragraph creation. chat.openai.com
-- I used several youTube videos to help me with the JavaScript. I used this one to help me with the modal - [](https://www.youtube.com/watch?v=6ophW7Ask_0&t=1s)
-- I used stack overflow on a daily basis for code-related problems throughout.[](https://stackoverflow.com/)
-- I would like to credit another project which I took some style inspiration from for the layout [](https://adamgilroy22.github.io/stick-kick/)
+- I used several youTube videos to help me with the JavaScript. I used this one to help me with the modal - <https://www.youtube.com/watch?v=6ophW7Ask_0&t=1s>
+- I used stack overflow on a daily basis for code-related problems throughout.<https://stackoverflow.com/>
+- I would like to credit another project which I took some style inspiration from for the layout <https://adamgilroy22.github.io/stick-kick/>
 
 ## ACKNOWLEDGEMENTS
 
-I would like to Acknowledge my mentor, Luke Buchannan, for his guidance and support throughout this project. I would also like to thank my wife Philippa for her constant support and encouragement. I would also like to thank my fellow students on the slack channel for their help and support throughout the project.
+I would like to acknowledge my mentor, Luke Buchanan, for his guidance and support throughout this project. I would also like to thank my wife Philippa for her constant support and encouragement. I would also like to thank my fellow students on the slack channel for their help and support throughout the project.
