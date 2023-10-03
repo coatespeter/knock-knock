@@ -31,3 +31,11 @@ Given that this website is designed as a single-serving platform, it comprises o
 - As a player, I want to be able to click the "Reset" button at any time to restart the game, so that I can start over if I choose to.
   
 - As a player, I want to know that winning is based on luck and there are no specific strategies, so that I can approach the game with a fair chance.
+
+## WIREFRAMES
+
+![enter image description here](https://i.ibb.co/7Cn3nSM/initial-wireframe.png)
+
+This was the initial wireframe for the project. The final design is very similar to this, with the exception of the "Play Again" button, which was added to the final design. I also decided to remove the vs computer button as it was not necessary for the game.
+
+
