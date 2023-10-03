@@ -157,9 +157,20 @@ Future versions of the game could also feature a switch to allow the player to c
 - [procreate](https://procreate.art/) The project uses procreate to create the favicon and all the game images.
 
 ## TESTING
+| Test Description | Expected Result | Actual Result | Pass/Fail |
+| --- | --- | --- | --- |
+| Test 1: Verify that the Play Music button starts the theme song | You should hear the theme song play aloug   | Plays | PASS |
+| Test 2: Verify that the user can make the modal appear clicking instructions. | Modal appears | Appears | PASS |
+| Test 3: Verify that the user can make the modal disappear | Disappears on pressing lets play or clicking outside the box | Dissppears | PASS |
+| Test 4: Verify that the user can press the reset button at any time and the game will return to the first game state| a reset of the game | Resets | PASS |
+| Test 5: Verify that the user can press the play again button at any time and the game will return to the first game state| a reset of the game | Resets | PASS |
+| Test 6: Verify that the user can press the directional buttons to interact with the game and have a corresponding image appear| all buttons function correctly | Direct player direction | PASS |
+| Test 8: Verify that the user can win the game and have the game image appear letting them know| Winning picture should appear showing the General | Appears | PASS |
 
 ## DEPLOYMENT
 
 ## LOCAL DEPLOYMENT
 
 ## CREDITS
+
+## ACKNOWLEDGEMENTS
