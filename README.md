@@ -49,7 +49,7 @@ I used Google Fonts to choose the typography for this project.
 ## FEATURES
 
 Favicon
-![enter image description here](https://i.ibb.co/Fk1dPbV/GLeefavicon.jpg)
+![enter image description here](https://i.ibb.co/0Bx3V2Z/Screenshot-2023-10-03-at-09-23-39.png)
 
 The favicon was created using [favicon.io](https://favicon.io/favicon-converter/). I drew an image of General Lee from the TV show Takeshi's Castle and uploaded it to the site. The site then generated a favicon.ico file which I downloaded and added to the project.
 
@@ -60,14 +60,46 @@ The Logo appears at the top of the page in the center and introduces the name of
 Game settings buttons
 ![image of the game settings buttons](https://i.ibb.co/gPYHHCV/Screenshot-2023-10-03-at-09-18-13.png)
 The game settings buttons are located at the top of the page and allow the user to play music, read the instructions, reset the game, and play again.
-**The play music button** is in the off state when the page loads. When the user clicks the button, the music starts playing and the button changes to the on state. When the user clicks the button again, the music stops playing and the button returns to the off state. It will play the theme song from the TV show Takeshi's Castle on a loop.
-When the user clicks the **instructions button**, a modal appears with the game instructions. The user can close the modal by clicking the lets play button or by clicking anywhere outside the modal. The modal is responsive and will resize to fit the screen.
+
+- The play music buttonis in the off state when the page loads. When the user clicks the button, the music starts playing and the button changes to the on state. When the user clicks the button again, the music stops playing and the button returns to the off state. It will play the theme song from the TV show Takeshi's Castle on a loop.
+
+- When the user clicks the instructions button, a modal appears with the game instructions. The user can close the modal by clicking the lets play button or by clicking anywhere outside the modal. The modal is responsive and will resize to fit the screen.
 
 Modal
 ![image of the modal](https://i.ibb.co/c2W9FkH/Screenshot-2023-10-03-at-09-20-00.png)
-**The reset button** will reset the game to its initial state. It will reset the score to 0 and the game image to the initial image. 
+
+The reset button will reset the game to its initial state. It will reset the score to 0 and the game image to the initial image.
+
+Game area
+![image of the game area](https://i.ibb.co/dgwyZxG/Screenshot-2023-10-03-at-09-18-27.png)
+
+The game area is the central section of the page. It contains the game image of the doors and is where the visual changes will take place based on the player's choices. One outcome is that the player will rip through the door and the other is that the player will bang into the wall. The game area contains the directional buttons which the player will use to make their choices and also contains the score counter which will keep track of the player's score. depending on the game state, there is also text displayed below the score counter which will indicate to the player whether they have ripped through the door or banged into the wall.
+
+Score counter
+This will go up with each rip and reset with each wall bang. It will reset to 0 if the player clicks the reset button. When it reaches 3, the player wins the game.
+![image of the score counter](https://i.ibb.co/9VxwcH1/Screenshot-2023-10-03-at-09-18-35.png)
+
+Game state text
+This will change depending on player choices and outcome.
+![image of the game state text](https://i.ibb.co/kmtdMB9/gamestatetedt.jpg)
+
+Directional buttons
+![image of the directional buttons](https://i.ibb.co/s5FJNJ9/Screenshot-2023-10-03-at-09-18-50.png)
+
+The directional buttons are located below the game image and allow the user to make their choices. The buttons are responsive and will resize to fit the screen.
+
+Winning image
+This will appear once the player has successfully ripped through three doors in a row.
+![image of the winning image](https://i.ibb.co/17y4F0b/Screenshot-2023-10-03-at-09-19-34.png)
+
+Play again button
+This will appear once the player has successfully ripped through three doors in a row. It will reset the game to its initial state when clicked.
+![image of the play again button](https://i.ibb.co/zSPxpKY/Screenshot-2023-10-03-at-09-19-43.png)
 
 ## FUTURE IMPLEMENATIONS
+
+In future, I would like to add a game timer which is the lenght of the theme song. It would give the player an added element of pressure and would make the game more challenging.
+Future versions of the game could also feature a switch to allow the player to choose between playing against the computer or playing against another player.
 
 ## TECHNOLOGIES USED
 
