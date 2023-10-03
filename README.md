@@ -48,6 +48,11 @@ I used Google Fonts to choose the typography for this project.
 
 ## FEATURES
 
+Favicon
+![enter image description here](https://i.ibb.co/0Bx3V2Z/Screenshot-2023-10-03-at-09-23-39.png)
+
+The favicon was created using [favicon.io](https://favicon.io/favicon-converter/). I drew an image of General Lee from the TV show Takeshi's Castle and uploaded it to the site. The site then generated a favicon.ico file which I downloaded and added to the project.
+
 ## FUTURE IMPLEMENATIONS
 
 ## TECHNOLOGIES USED
