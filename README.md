@@ -40,6 +40,10 @@ This was the initial wireframe for the project. The final design is very similar
 
 ## COLOUR SCHEME
 
+![image of mood board](https://i.ibb.co/Jt7KrDx/moodboardpic.jpg)
+
+The website's color scheme, inspired by the 80s Japanese TV show Takeshi's Castle, is a lively tribute to that fun era. The bold use of red, blue, yellow, and green brings a playful and nostalgic feel. It captures the energetic spirit of the show and invites visitors to enjoy a journey filled with joy and a touch of retro charm.
+
 ![enter image description here](https://i.ibb.co/Hxs2mfP/colourscheme.jpg)
 
 ## TYPOGRAPHY
