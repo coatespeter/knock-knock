@@ -40,6 +40,8 @@ This was the initial wireframe for the project. The final design is very similar
 
 ## COLOUR SCHEME
 
+![enter image description here](https://i.ibb.co/Hxs2mfP/colourscheme.jpg)
+
 ## TYPOGRAPHY
 
 I used Google Fonts to choose the typography for this project.
@@ -59,7 +61,7 @@ Logo
 ![image of the knock knock logo](https://i.ibb.co/9HcQ7qq/Screenshot-2023-10-03-at-09-18-03.png)
 The Logo appears at the top of the page in the center and introduces the name of the game to the user.
 
-Game settings buttons
+Game Settings Buttons
 
 ![image of the game settings buttons](https://i.ibb.co/gPYHHCV/Screenshot-2023-10-03-at-09-18-13.png)
 The game settings buttons are located at the top of the page and allow the user to play music, read the instructions, reset the game, and play again.
@@ -74,7 +76,7 @@ Modal
 
 The reset button will reset the game to its initial state. It will reset the score to 0 and the game image to the initial image.
 
-Game area
+Game Area
 
 ![image of the game area](https://i.ibb.co/dgwyZxG/Screenshot-2023-10-03-at-09-18-27.png)
 
@@ -86,16 +88,22 @@ This will go up with each rip and reset with each wall bang. It will reset to 0 
 
 ![image of the score counter](https://i.ibb.co/9VxwcH1/Screenshot-2023-10-03-at-09-18-35.png)
 
-Game state text
+Game State Text
 
 This will change depending on player choices and outcome.
 ![image of the game state text](https://i.ibb.co/kmtdMB9/gamestatetedt.jpg)
 
-Directional buttons
+Directional Buttons
 
 ![image of the directional buttons](https://i.ibb.co/s5FJNJ9/Screenshot-2023-10-03-at-09-18-50.png)
 
 The directional buttons are located below the game image and allow the user to make their choices. The buttons are responsive and will resize to fit the screen.
+
+Outcome Images
+
+These will appear when the player has successfully ripped through a door or banged into a wall.
+
+![image of the outcome images](https://i.ibb.co/NsBhVB3/outcomespic.jpg)
 
 Winning image
 
@@ -128,9 +136,9 @@ Future versions of the game could also feature a switch to allow the player to c
 
 - [Git](https://git-scm.com/) The project uses Git for version control.
 
-- [GitHub] The project uses GitHub to host the project.
+- [GitHub](https://github.com/coatespeter/knock-knock) The project uses GitHub to host the project.
 
-- [GitHub Pages](https://pages.github.com/) The project uses GitHub Pages to deploy the project.
+- [GitHub Pages](https://github.com/coatespeter/knock-knock/deployments/github-pages) The project uses GitHub Pages to deploy the project.
 
 - [Visual Studio Code](https://code.visualstudio.com/) The project uses Visual Studio Code as the IDE.
 
